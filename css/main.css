@@ -2905,13 +2905,16 @@ input[type="reset"] {
 }
 .details-modal .details-modal-title {
   color: #111827;
-  padding: 1.5em 2em;
+  padding: 1.2em 2em;
   pointer-events: all;
   position: relative;
+  text-align: center;
+  padding-left: 55px;
   width: calc(100% - 4.5em);
+  
 }
 .details-modal .details-modal-title h1 {
-  font-size: 1.25rem;
+  font-size: 27px;
   font-weight: 600;
   line-height: normal;
   padding-bottom: 0px;
@@ -2919,7 +2922,7 @@ input[type="reset"] {
 }
 .details-modal .details-modal-content {
   border-top: 1px solid #e0e0e0;
-  padding: 2.5em 3em;
+  padding: 2.5em 4em;
   pointer-events: all;
   overflow: auto;
 }
