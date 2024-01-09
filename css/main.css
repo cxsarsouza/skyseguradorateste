@@ -39,13 +39,15 @@ footer, header, menu, nav, section {
 html,
 body {
   min-height: 100%;
-  font-family: 'Poppins', sans-serif !important; }
+  font-family: 'Poppins', sans-serif !important; 
+  scroll-behavior: smooth;}
   
 
 body {
   color: rgba(35, 41, 56, 0.6);
   font: 400 14px/130% "Josefin Sans", sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth; }
 
 .wrapper {
   display: -webkit-box;
@@ -146,7 +148,7 @@ a {
   color: #3993ff;
   position: relative;
   border-bottom: 1px solid transparent; }
-  a:before {
+  .a-nav:before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -1293,7 +1295,7 @@ form textarea {
   form input[type="tel"]:disabled,
   form input[type="email"]:disabled,
   form textarea:disabled {
-    color: rgba(35, 41, 56, 0.4);
+    color: #fff;
     border-color: rgba(35, 41, 56, 0.4); }
   form input[type="text"].error,
   form input[type="password"].error,
@@ -1360,11 +1362,11 @@ label.error {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: rgba(35, 41, 56, 0.6); }
+  color:#fff; }
 
 input:disabled::-moz-placeholder,
 textarea:disabled::-moz-placeholder {
-  color: rgba(35, 41, 56, 0.4); }
+  color: #fff; }
 
 @-webkit-keyframes autofill {
   to {
@@ -1375,15 +1377,15 @@ input:-webkit-autofill {
   -webkit-animation-fill-mode: both; }
 
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 4px; }
 
 ::-webkit-scrollbar-track {
-  background: rgba(127, 116, 255, 0.4); }
+  background: rgb(0, 63, 122); }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #7f74ff; }
+  background-color: #008ABF; }
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #4940A7; }
+    background-color: #0047ba; }
 
 .btn,
 button,
@@ -1776,7 +1778,7 @@ input[type="reset"] {
         border-radius: 100%;
         -webkit-box-shadow: 0 0 100px rgba(64, 58, 128, 0.24);
                 box-shadow: 0 0 100px rgba(64, 58, 128, 0.24);
-        background-color: #D7CFFF;
+        background-color: #0047ba;
         z-index: -2; }
     .header-nav__menu, .header-nav__info {
       width: 0;
@@ -2774,6 +2776,7 @@ input[type="reset"] {
   font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  cursor: pointer;
 }
 
 .card-prot{
@@ -2894,6 +2897,7 @@ input[type="reset"] {
   display: flex;
   height: 4.5em;
   justify-content: center;
+  cursor: pointer;
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -2928,10 +2932,10 @@ input[type="reset"] {
 }
 
 .details-modal-overlay {
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.5s ease-out;
   pointer-events: none;
   z-index: 9999;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 1);
   position: fixed;
   opacity: 0;
   bottom: 0;
@@ -3582,4 +3586,308 @@ code {
       
     }
 
-/*read-more*/
+.conveniadas{
+  background-image: url('../images/bg-conveniadas.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.oticas{
+  background-image: url('../images/bg-otica.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clinicas{
+  background-image: url('../images/bg-clinicas.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__link2 {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 0 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (max-width: 991px) {
+    .nav__link2 {
+      padding: 0 24px; } }
+
+      .header2 {
+        background-color: transparent;
+        padding: 24px 0; }
+        @media screen and (min-width: 1024px) {
+          .header2 {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; 
+            background-color: rgb(0, 26, 63, 0.3) !important;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);} }
+        @media screen and (min-width: 1024px) {
+          .header2.header-scroll {
+            -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+                    background-color: rgb(0, 26, 63, 0.3) !important; } }
+        .header2 .container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 100%;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+        @media screen and (max-width: 1023px) {
+          .header2 {
+            padding: 12px 0; } }
+
+  a{
+    text-decoration: none !important;
+  }
+  
+.section-conveniadas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.section-oticas{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 110px;
+}
+
+.section-conveniadas h1{
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-conveniadas p{
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.section-oticas h1{
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-oticas p{
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.card-conveniadas{
+  border: 1px solid #3993ff;
+  border-radius: 4px;
+  padding: 35px 10px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-conveniadas:hover{
+  border: 1px solid #3993ff;
+  background-color: #3993ff;
+  color: #fff !important;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.card-conveniadas i{
+  color: #fff;
+  font-size: 40px;
+}
+
+.card-conveniadas h4{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.card-conveniadas b{
+  font-weight: 600;
+}
+
+.a-conveniadas{
+  text-decoration: none;
+}
+
+.a-conveniadas:before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    background-color: none !important;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 0;
+    
+}
+
+.icon-conve{
+  color: #008ABF;
+  padding-right: 20px;
+}
+
+.search-container {
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar{
+  color: #fff !important;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  color: #fff !important;
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  outline: none;
+  font-family: 'Poppins', sans-serif !important; 
+  margin-bottom: 45px;
+}
+
+input#search-bar:focus {
+  border: 1px solid #008ABF;
+  transition: 0.35s ease;
+  color: #008ABF;
+  
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #fff;
+}
+
+input#search-bar:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+
+.button-cep{
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 140%;
+  padding: 7px 75px;
+  border: 1px solid #008ABF;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  outline: none;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #008ABF;
+  -webkit-box-shadow: none;
+  box-shadow:none ;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.teste{
+  height: 390px;
+  overflow: auto;
+}
+
+.card-oticas{
+  background-color: rgb(0, 138, 191, 0.75);
+  border-radius: 4px;
+  padding: 20px ;
+  margin: 0px 0px 20px 0px;
+}
+
+.card-oticas i {
+  color: #002c72;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.card-oticas h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card-oticas p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.card-oticas a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #002c72;
+  margin-bottom: 0px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-oticas a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+
