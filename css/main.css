@@ -3890,4 +3890,10 @@ input#search-bar:focus:-ms-placeholder {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 573px) {
+  .search-container{
+    width: 100%;
+  }
+}
+
 
