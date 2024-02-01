@@ -4085,6 +4085,78 @@ button a {
   line-height: 22px;
 }
 
+.cookies-box {
+  position: fixed;
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  bottom: -225px;
+  width: 100%;
+  background-color: #00296a;
+  padding: 25px;
+  margin: 0 auto;
+  color: #112d32;
+  transition: all 0.3s ease;
+}
+.cookies-box.show {
+  bottom: 25px;
+  z-index: 999999;
+
+}
+.cookies__title {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+}
+.cookies__text {
+  font-size: 15px;
+  text-align: center;
+}
+.cookies__title,
+.cookies__text {
+  margin-bottom: 15px;
+}
+.cookies__link {
+  margin-left: 10px;
+  display: inline-block;
+  color: #8fc1e3;
+}
+.cookies__btn {
+  font-size: 14px;
+  padding: 6px 66px;
+  background-color: #3993ff;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  transition: background 0.3s;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+.cookies__btn2 {
+  font-size: 14px;
+  padding: 6px 66px;
+  background-color: transparent;
+  border: 1px solid #3993ff;
+  color: #3993ff;
+  border-radius: 3px;
+  transition: background 0.3s;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+.cookies__btn--accept {
+  margin-right: 15px;
+}
+.cookies__btn:hover {
+  background-color: #2777da;
+}
+.cookies__link:hover {
+  color: #31708e;
+}
+.cookies__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* MEDIAS */
 @media (max-width: 575px) {
